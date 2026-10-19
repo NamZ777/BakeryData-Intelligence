@@ -1,0 +1,6 @@
+{
+  "name": "BakeryData Intelligence & Profit Optimizer",
+  "description": "ระบบวิเคราะห์พฤติกรรมลูกค้าและเพิ่มกำไรร้านเบเกอรี่ตามระเบียบวิธี CRISP-DM ลดของเสีย 20% เพิ่ม Ticket Size 15% เพิ่ม Retention 25% สำหรับผู้จัดการ ห้องครัว และฝ่ายบริหาร พร้อมระบบอัปโหลดข้อมูลของตนเอง",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

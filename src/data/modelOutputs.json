@@ -1,0 +1,742 @@
+{
+  "meta": {
+    "dataSource": "synthetic",
+    "disclaimer": "ข้อมูลที่ใช้เทรนโมเดลเป็นข้อมูลจำลอง (Synthetic) ที่สร้างขึ้นเพื่อสาธิตระบบ ไม่ใช่ข้อมูลการขายจริง",
+    "rows": 50639,
+    "transactions": 37306,
+    "dateFrom": "2026-01-01",
+    "dateTo": "2026-08-29"
+  },
+  "metrics": {
+    "waste": {
+      "rocAuc": 0.801,
+      "recall": 0.735,
+      "precision": 0.26,
+      "baseRatePct": 12.3
+    },
+    "basket": {
+      "totalRules": 69,
+      "rulesLiftAbove1": 30,
+      "maxLift": 5.1,
+      "multiItemBaskets": 12303
+    },
+    "demand": {
+      "mae": 1.25,
+      "r2": 0.376,
+      "testDays": 49,
+      "dailyMapePct": 10.1
+    }
+  },
+  "dailyForecast": [
+    {
+      "day": "จันทร์",
+      "actual": 15840,
+      "forecast": 17350,
+      "accuracy": 90.2
+    },
+    {
+      "day": "อังคาร",
+      "actual": 16490,
+      "forecast": 16950,
+      "accuracy": 86.0
+    },
+    {
+      "day": "พุธ",
+      "actual": 15140,
+      "forecast": 16460,
+      "accuracy": 83.6
+    },
+    {
+      "day": "พฤหัสบดี",
+      "actual": 16000,
+      "forecast": 17230,
+      "accuracy": 88.9
+    },
+    {
+      "day": "ศุกร์ (Family Stock)",
+      "actual": 20860,
+      "forecast": 19400,
+      "accuracy": 90.3
+    },
+    {
+      "day": "เสาร์ (Weekend Peak)",
+      "actual": 28640,
+      "forecast": 29150,
+      "accuracy": 96.4
+    },
+    {
+      "day": "อาทิตย์ (Weekend Peak)",
+      "actual": 27750,
+      "forecast": 28850,
+      "accuracy": 94.0
+    }
+  ],
+  "basketRules": [
+    {
+      "id": "RUL-01",
+      "antecedent": [
+        "ทาร์ตผลไม้สด (Fruit Tart)"
+      ],
+      "consequent": [
+        "มัทฉะลาเต้เย็น (Iced Matcha Latte)"
+      ],
+      "support": 0.12,
+      "confidence": 0.77,
+      "lift": 4.34,
+      "bundleName": "ทาร์ตผลไม้สด + มัทฉะลาเต้เย็น Combo",
+      "bundlePrice": 170,
+      "regularPrice": 190,
+      "targetPersona": "Cafe Hopper"
+    },
+    {
+      "id": "RUL-02",
+      "antecedent": [
+        "มัทฉะลาวาเค้ก (Matcha Lava Cake)"
+      ],
+      "consequent": [
+        "มัทฉะลาเต้เย็น (Iced Matcha Latte)"
+      ],
+      "support": 0.07,
+      "confidence": 0.7,
+      "lift": 3.94,
+      "bundleName": "มัทฉะลาวาเค้ก + มัทฉะลาเต้เย็น Combo",
+      "bundlePrice": 200,
+      "regularPrice": 220,
+      "targetPersona": "Cafe Hopper"
+    },
+    {
+      "id": "RUL-03",
+      "antecedent": [
+        "ครัวซองต์อัลมอนด์ (Almond Croissant)"
+      ],
+      "consequent": [
+        "ลาเต้เย็น (Iced Latte)"
+      ],
+      "support": 0.15,
+      "confidence": 0.82,
+      "lift": 2.5,
+      "bundleName": "ครัวซองต์อัลมอนด์ + ลาเต้เย็น Combo",
+      "bundlePrice": 140,
+      "regularPrice": 155,
+      "targetPersona": "Morning Commuter"
+    },
+    {
+      "id": "RUL-04",
+      "antecedent": [
+        "มัทฉะลาวาเค้ก (Matcha Lava Cake)"
+      ],
+      "consequent": [
+        "ทาร์ตผลไม้สด (Fruit Tart)"
+      ],
+      "support": 0.04,
+      "confidence": 0.35,
+      "lift": 2.29,
+      "bundleName": "มัทฉะลาวาเค้ก + ทาร์ตผลไม้สด Combo",
+      "bundlePrice": 225,
+      "regularPrice": 250,
+      "targetPersona": "Cafe Hopper"
+    },
+    {
+      "id": "RUL-05",
+      "antecedent": [
+        "ขนมปังโฮลวีต (Whole Wheat Bread)"
+      ],
+      "consequent": [
+        "ลาเต้เย็น (Iced Latte)"
+      ],
+      "support": 0.1,
+      "confidence": 0.76,
+      "lift": 2.29,
+      "bundleName": "ขนมปังโฮลวีต + ลาเต้เย็น Combo",
+      "bundlePrice": 145,
+      "regularPrice": 160,
+      "targetPersona": "Health & Family"
+    },
+    {
+      "id": "RUL-06",
+      "antecedent": [
+        "ครัวซองต์เนยฝรั่งเศส (Butter Croissant)"
+      ],
+      "consequent": [
+        "อเมริกาโน่เย็น (Iced Americano)"
+      ],
+      "support": 0.22,
+      "confidence": 0.84,
+      "lift": 2.01,
+      "bundleName": "ครัวซองต์เนยฝรั่งเศส + อเมริกาโน่เย็น Combo",
+      "bundlePrice": 110,
+      "regularPrice": 125,
+      "targetPersona": "Morning Commuter"
+    }
+  ],
+  "upsell": [
+    {
+      "trigger": "ทาร์ตผลไม้สด (Fruit Tart)",
+      "triggerPrice": 110,
+      "suggestions": [
+        {
+          "suggest": "มัทฉะลาเต้เย็น (Iced Matcha Latte)",
+          "lift": 4.34,
+          "confidence": 0.77,
+          "suggestPrice": 80,
+          "regularPrice": 190,
+          "bundlePrice": 170,
+          "persona": "Cafe Hopper"
+        },
+        {
+          "suggest": "มัทฉะลาวาเค้ก (Matcha Lava Cake)",
+          "lift": 2.29,
+          "confidence": 0.23,
+          "suggestPrice": 140,
+          "regularPrice": 250,
+          "bundlePrice": 225,
+          "persona": "Cafe Hopper"
+        }
+      ]
+    },
+    {
+      "trigger": "มัทฉะลาเต้เย็น (Iced Matcha Latte)",
+      "triggerPrice": 80,
+      "suggestions": [
+        {
+          "suggest": "ทาร์ตผลไม้สด (Fruit Tart)",
+          "lift": 4.34,
+          "confidence": 0.66,
+          "suggestPrice": 110,
+          "regularPrice": 190,
+          "bundlePrice": 170,
+          "persona": "Cafe Hopper"
+        },
+        {
+          "suggest": "มัทฉะลาวาเค้ก (Matcha Lava Cake)",
+          "lift": 3.94,
+          "confidence": 0.4,
+          "suggestPrice": 140,
+          "regularPrice": 220,
+          "bundlePrice": 200,
+          "persona": "Cafe Hopper"
+        }
+      ]
+    },
+    {
+      "trigger": "มัทฉะลาวาเค้ก (Matcha Lava Cake)",
+      "triggerPrice": 140,
+      "suggestions": [
+        {
+          "suggest": "มัทฉะลาเต้เย็น (Iced Matcha Latte)",
+          "lift": 3.94,
+          "confidence": 0.7,
+          "suggestPrice": 80,
+          "regularPrice": 220,
+          "bundlePrice": 200,
+          "persona": "Cafe Hopper"
+        },
+        {
+          "suggest": "ทาร์ตผลไม้สด (Fruit Tart)",
+          "lift": 2.29,
+          "confidence": 0.35,
+          "suggestPrice": 110,
+          "regularPrice": 250,
+          "bundlePrice": 225,
+          "persona": "Cafe Hopper"
+        }
+      ]
+    },
+    {
+      "trigger": "ครัวซองต์อัลมอนด์ (Almond Croissant)",
+      "triggerPrice": 85,
+      "suggestions": [
+        {
+          "suggest": "ลาเต้เย็น (Iced Latte)",
+          "lift": 2.5,
+          "confidence": 0.82,
+          "suggestPrice": 70,
+          "regularPrice": 155,
+          "bundlePrice": 140,
+          "persona": "Morning Commuter"
+        }
+      ]
+    },
+    {
+      "trigger": "ลาเต้เย็น (Iced Latte)",
+      "triggerPrice": 70,
+      "suggestions": [
+        {
+          "suggest": "ครัวซองต์อัลมอนด์ (Almond Croissant)",
+          "lift": 2.5,
+          "confidence": 0.46,
+          "suggestPrice": 85,
+          "regularPrice": 155,
+          "bundlePrice": 140,
+          "persona": "Morning Commuter"
+        },
+        {
+          "suggest": "ขนมปังโฮลวีต (Whole Wheat Bread)",
+          "lift": 2.29,
+          "confidence": 0.31,
+          "suggestPrice": 90,
+          "regularPrice": 160,
+          "bundlePrice": 145,
+          "persona": "Health & Family"
+        }
+      ]
+    },
+    {
+      "trigger": "ขนมปังโฮลวีต (Whole Wheat Bread)",
+      "triggerPrice": 90,
+      "suggestions": [
+        {
+          "suggest": "ลาเต้เย็น (Iced Latte)",
+          "lift": 2.29,
+          "confidence": 0.76,
+          "suggestPrice": 70,
+          "regularPrice": 160,
+          "bundlePrice": 145,
+          "persona": "Health & Family"
+        }
+      ]
+    },
+    {
+      "trigger": "ครัวซองต์เนยฝรั่งเศส (Butter Croissant)",
+      "triggerPrice": 65,
+      "suggestions": [
+        {
+          "suggest": "อเมริกาโน่เย็น (Iced Americano)",
+          "lift": 2.01,
+          "confidence": 0.84,
+          "suggestPrice": 60,
+          "regularPrice": 125,
+          "bundlePrice": 110,
+          "persona": "Morning Commuter"
+        }
+      ]
+    },
+    {
+      "trigger": "อเมริกาโน่เย็น (Iced Americano)",
+      "triggerPrice": 60,
+      "suggestions": [
+        {
+          "suggest": "ครัวซองต์เนยฝรั่งเศส (Butter Croissant)",
+          "lift": 2.01,
+          "confidence": 0.52,
+          "suggestPrice": 65,
+          "regularPrice": 125,
+          "bundlePrice": 110,
+          "persona": "Morning Commuter"
+        },
+        {
+          "suggest": "แซนด์วิชแฮมชีส (Ham & Cheese Sandwich)",
+          "lift": 1.88,
+          "confidence": 0.26,
+          "suggestPrice": 75,
+          "regularPrice": 135,
+          "bundlePrice": 120,
+          "persona": "Health & Family"
+        }
+      ]
+    },
+    {
+      "trigger": "พายสับปะรด (Pineapple Pie)",
+      "triggerPrice": 45,
+      "suggestions": [
+        {
+          "suggest": "ลาเต้เย็น (Iced Latte)",
+          "lift": 1.93,
+          "confidence": 0.64,
+          "suggestPrice": 70,
+          "regularPrice": 115,
+          "bundlePrice": 105,
+          "persona": "Evening Discount Hunter"
+        }
+      ]
+    },
+    {
+      "trigger": "แซนด์วิชแฮมชีส (Ham & Cheese Sandwich)",
+      "triggerPrice": 75,
+      "suggestions": [
+        {
+          "suggest": "อเมริกาโน่เย็น (Iced Americano)",
+          "lift": 1.88,
+          "confidence": 0.79,
+          "suggestPrice": 60,
+          "regularPrice": 135,
+          "bundlePrice": 120,
+          "persona": "Health & Family"
+        }
+      ]
+    },
+    {
+      "trigger": "ชีสเค้กคลาสสิก (Classic Cheesecake)",
+      "triggerPrice": 130,
+      "suggestions": [
+        {
+          "suggest": "อเมริกาโน่เย็น (Iced Americano)",
+          "lift": 1.74,
+          "confidence": 0.73,
+          "suggestPrice": 60,
+          "regularPrice": 190,
+          "bundlePrice": 170,
+          "persona": "Cafe Hopper"
+        }
+      ]
+    }
+  ],
+  "wasteRisk": [
+    {
+      "product": "ชีสเค้กคลาสสิก (Classic Cheesecake)",
+      "slots": {
+        "Afternoon": {
+          "risk": 0.63,
+          "actualWastePct": 21.9,
+          "level": "high",
+          "n": 160
+        },
+        "Evening": {
+          "risk": 0.65,
+          "actualWastePct": 34.2,
+          "level": "high",
+          "n": 117
+        },
+        "Midday": {
+          "risk": 0.48,
+          "actualWastePct": 16.4,
+          "level": "mid",
+          "n": 244
+        },
+        "Morning": {
+          "risk": 0.33,
+          "actualWastePct": 17.0,
+          "level": "low",
+          "n": 47
+        }
+      }
+    },
+    {
+      "product": "มัทฉะลาวาเค้ก (Matcha Lava Cake)",
+      "slots": {
+        "Afternoon": {
+          "risk": 0.6,
+          "actualWastePct": 27.2,
+          "level": "mid",
+          "n": 158
+        },
+        "Evening": {
+          "risk": 0.65,
+          "actualWastePct": 27.8,
+          "level": "high",
+          "n": 18
+        },
+        "Midday": {
+          "risk": 0.46,
+          "actualWastePct": 15.6,
+          "level": "mid",
+          "n": 302
+        },
+        "Morning": {
+          "risk": 0.35,
+          "actualWastePct": 5.2,
+          "level": "low",
+          "n": 77
+        }
+      }
+    },
+    {
+      "product": "ทาร์ตผลไม้สด (Fruit Tart)",
+      "slots": {
+        "Afternoon": {
+          "risk": 0.64,
+          "actualWastePct": 23.9,
+          "level": "high",
+          "n": 259
+        },
+        "Evening": {
+          "risk": 0.67,
+          "actualWastePct": 29.8,
+          "level": "high",
+          "n": 124
+        },
+        "Midday": {
+          "risk": 0.44,
+          "actualWastePct": 17.4,
+          "level": "mid",
+          "n": 432
+        },
+        "Morning": {
+          "risk": 0.29,
+          "actualWastePct": 6.6,
+          "level": "low",
+          "n": 106
+        }
+      }
+    },
+    {
+      "product": "ครัวซองต์อัลมอนด์ (Almond Croissant)",
+      "slots": {
+        "Afternoon": {
+          "risk": 0.63,
+          "actualWastePct": 22.8,
+          "level": "high",
+          "n": 250
+        },
+        "Evening": {
+          "risk": 0.62,
+          "actualWastePct": 22.3,
+          "level": "mid",
+          "n": 260
+        },
+        "Midday": {
+          "risk": 0.46,
+          "actualWastePct": 8.2,
+          "level": "mid",
+          "n": 196
+        },
+        "Morning": {
+          "risk": 0.3,
+          "actualWastePct": 7.1,
+          "level": "low",
+          "n": 323
+        }
+      }
+    },
+    {
+      "product": "ครัวซองต์เนยฝรั่งเศส (Butter Croissant)",
+      "slots": {
+        "Afternoon": {
+          "risk": 0.62,
+          "actualWastePct": 19.1,
+          "level": "mid",
+          "n": 220
+        },
+        "Evening": {
+          "risk": 0.64,
+          "actualWastePct": 23.7,
+          "level": "high",
+          "n": 287
+        },
+        "Midday": {
+          "risk": 0.43,
+          "actualWastePct": 12.2,
+          "level": "low",
+          "n": 229
+        },
+        "Morning": {
+          "risk": 0.31,
+          "actualWastePct": 5.9,
+          "level": "low",
+          "n": 715
+        }
+      }
+    },
+    {
+      "product": "พายสับปะรด (Pineapple Pie)",
+      "slots": {
+        "Afternoon": {
+          "risk": 0.65,
+          "actualWastePct": 30.8,
+          "level": "high",
+          "n": 169
+        },
+        "Evening": {
+          "risk": 0.61,
+          "actualWastePct": 24.8,
+          "level": "mid",
+          "n": 258
+        },
+        "Midday": {
+          "risk": 0.42,
+          "actualWastePct": 7.4,
+          "level": "low",
+          "n": 94
+        },
+        "Morning": {
+          "risk": 0.3,
+          "actualWastePct": 5.3,
+          "level": "low",
+          "n": 113
+        }
+      }
+    },
+    {
+      "product": "ขนมปังโฮลวีต (Whole Wheat Bread)",
+      "slots": {
+        "Afternoon": {
+          "risk": 0.64,
+          "actualWastePct": 26.0,
+          "level": "high",
+          "n": 385
+        },
+        "Evening": {
+          "risk": 0.65,
+          "actualWastePct": 25.5,
+          "level": "high",
+          "n": 259
+        },
+        "Midday": {
+          "risk": 0.43,
+          "actualWastePct": 15.4,
+          "level": "mid",
+          "n": 123
+        },
+        "Morning": {
+          "risk": 0.24,
+          "actualWastePct": 4.3,
+          "level": "low",
+          "n": 93
+        }
+      }
+    },
+    {
+      "product": "แซนด์วิชแฮมชีส (Ham & Cheese Sandwich)",
+      "slots": {
+        "Afternoon": {
+          "risk": 0.64,
+          "actualWastePct": 24.7,
+          "level": "high",
+          "n": 296
+        },
+        "Evening": {
+          "risk": 0.63,
+          "actualWastePct": 26.5,
+          "level": "mid",
+          "n": 211
+        },
+        "Midday": {
+          "risk": 0.39,
+          "actualWastePct": 18.0,
+          "level": "low",
+          "n": 100
+        },
+        "Morning": {
+          "risk": 0.27,
+          "actualWastePct": 7.5,
+          "level": "low",
+          "n": 160
+        }
+      }
+    }
+  ],
+  "bakingPlan": {
+    "weekday": [
+      {
+        "product": "ครัวซองต์เนยฝรั่งเศส (Butter Croissant)",
+        "morning": 24,
+        "midday": 5,
+        "afternoon": 12,
+        "total": 41
+      },
+      {
+        "product": "ครัวซองต์อัลมอนด์ (Almond Croissant)",
+        "morning": 11,
+        "midday": 5,
+        "afternoon": 13,
+        "total": 29
+      },
+      {
+        "product": "ขนมปังโฮลวีต (Whole Wheat Bread)",
+        "morning": 3,
+        "midday": 3,
+        "afternoon": 16,
+        "total": 22
+      },
+      {
+        "product": "แซนด์วิชแฮมชีส (Ham & Cheese Sandwich)",
+        "morning": 6,
+        "midday": 3,
+        "afternoon": 12,
+        "total": 21
+      },
+      {
+        "product": "ทาร์ตผลไม้สด (Fruit Tart)",
+        "morning": 3,
+        "midday": 7,
+        "afternoon": 9,
+        "total": 19
+      },
+      {
+        "product": "พายสับปะรด (Pineapple Pie)",
+        "morning": 4,
+        "midday": 3,
+        "afternoon": 11,
+        "total": 18
+      },
+      {
+        "product": "ชีสเค้กคลาสสิก (Classic Cheesecake)",
+        "morning": 2,
+        "midday": 5,
+        "afternoon": 7,
+        "total": 14
+      },
+      {
+        "product": "มัทฉะลาวาเค้ก (Matcha Lava Cake)",
+        "morning": 3,
+        "midday": 6,
+        "afternoon": 4,
+        "total": 13
+      }
+    ],
+    "weekend": [
+      {
+        "product": "ทาร์ตผลไม้สด (Fruit Tart)",
+        "morning": 4,
+        "midday": 26,
+        "afternoon": 18,
+        "total": 48
+      },
+      {
+        "product": "ครัวซองต์เนยฝรั่งเศส (Butter Croissant)",
+        "morning": 16,
+        "midday": 10,
+        "afternoon": 20,
+        "total": 46
+      },
+      {
+        "product": "ขนมปังโฮลวีต (Whole Wheat Bread)",
+        "morning": 3,
+        "midday": 6,
+        "afternoon": 29,
+        "total": 38
+      },
+      {
+        "product": "ครัวซองต์อัลมอนด์ (Almond Croissant)",
+        "morning": 9,
+        "midday": 9,
+        "afternoon": 19,
+        "total": 37
+      },
+      {
+        "product": "แซนด์วิชแฮมชีส (Ham & Cheese Sandwich)",
+        "morning": 5,
+        "midday": 6,
+        "afternoon": 19,
+        "total": 30
+      },
+      {
+        "product": "มัทฉะลาวาเค้ก (Matcha Lava Cake)",
+        "morning": 3,
+        "midday": 15,
+        "afternoon": 12,
+        "total": 30
+      },
+      {
+        "product": "ชีสเค้กคลาสสิก (Classic Cheesecake)",
+        "morning": 3,
+        "midday": 13,
+        "afternoon": 12,
+        "total": 28
+      },
+      {
+        "product": "พายสับปะรด (Pineapple Pie)",
+        "morning": 3,
+        "midday": 5,
+        "afternoon": 18,
+        "total": 26
+      }
+    ]
+  },
+  "bakingPlanCheck": {
+    "plannedPerDayWeekday": 177,
+    "actualAvgPerDayWeekday": 147,
+    "plannedPerDayWeekend": 283,
+    "actualAvgPerDayWeekend": 232
+  }
+}
